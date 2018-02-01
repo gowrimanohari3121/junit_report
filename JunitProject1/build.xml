@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jar files" default="jar" basedir="D:\gowri\task3">
+<target name ="jar">
+<javac srcdir="D:\gowri\JunitProject1\src\com\cognizant\source" destdir="D:\gowri\task3" fork="true" includeantruntime="false"/>
+</target> 
+ <target name="jar1">
+<jar destfile="D:\gowri\jar1\app.jar" basedir="D:\gowri\task3">
+ 		<manifest>
+ 	      <attribute name="Main-Class"
+ 	            value="Sample"/>
+ 	    </manifest>
+ 	   
+</jar>
+</target>
+<target name="run">
+<java classname="com.cognizant.Sample" fork="true"/>
+</target>
+</project>
